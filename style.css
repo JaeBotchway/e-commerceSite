@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    height:100%;
+}
+
+.frame{
+display:block;
+text-align: right;
+height:30px;
+margin-left:70px;
+padding:20px;
+}
+
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:10px;
+    padding:40px 0;
+} 
+
+.left img{
+ width:70%;
+ 
+} 
+
+.right h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    
+}
+.right h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.right p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.right h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.color .color1 {
+    height:30px;
+    width:30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor:pointer;
+}
+
+
+#sOptions{
+    width:5rem;
+    height:2rem;
+}
+
+#minus, #plus{
+    cursor: pointer;
+}
+
+.circle span{
+    height:30px;
+    width:30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icons{
+    padding:30px 0;
+}
+
+#circle{
+    border:2px solid grey;
+    border-radius: 5px;
+}
+.add{
+    background-color: rgb(10,49,88);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    padding:20px;
+    width:20rem;
+    cursor:pointer;
+}
+
+.cart-page{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.color4{
+    color:white;
+    height:30px;
+    width:30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block; 
+    text-align: center; 
+}
+.cart-cart{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.cart-left{
+    margin:2rem 10rem;
+}
+
+.cart-left-left .color4{
+    padding:0;
+    
+    
+}
+
+.cart-item1 th{
+    padding:20px 0;
+    
+}
+
+.cart-item table{
+    border:2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(237,237,237);
+    width:60%;
+    margin:0 10rem;
+
+}
+
+.cart-item2{
+    margin:2rem 10rem;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+
+.cart-item2 a{
+    text-decoration: none;
+}
+
+.cart-right{
+    display:block;
+    border:1px solid grey;
+    border-radius: 20px;
+    margin-top:6.5rem;
+    width:60%;
+    padding:3%;
+    height:80%;
+}
+
+.cart-right .head{
+    background-color: rgba(4, 4, 53, 0.877); 
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding:5%;
+    border:none;
+
+}
+.d-flex{
+    padding:5%;
+}
+
+.spacer{
+margin-left: 100px;;
+}
+
+.s-flex{
+    display:inline-block;
+}
+
+.primary-text{
+    margin-left: 5px;
+}
+
+.btn-text{
+    display:flex;
+    
+}
+
+.input-text{
+    border:1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    padding:10px;
+    margin:5px;
+}
+.btn-text .btn{
+    background-color: rgba(4, 4, 53, 0.877); 
+    color:white;
+    border:none;
+    border-radius: 5px; 
+    padding:10px;
+    cursor: pointer;
+}
+
+.btn-set .btn{
+    background-color: rgba(4, 4, 53, 0.877); 
+    color:white; 
+    border:none;
+    border-radius: 5px; 
+    padding:15px;
+    margin-top: 20px;
+    width:90%;
+    cursor: pointer;
+}
+
+.slide{
+position:fixed;
+width:0;
+height:100%;
+background-color: white;
+top: 0;
+right:0;
+transition: 0.5s;
+border:rgb(145, 144, 144) solid 0.01rem;
+}
+
+.sub-main{
+    background-color:rgb(10,49,88) ;
+    height:50px;
+}
+
+.btnClose, .text-main{
+    font-size: 20px;
+    color:whitesmoke;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.btnClose{
+    margin:0 0 0 13rem;
+    text-decoration: none;
+ }
+
+ .btnClose:hover{
+     cursor: pointer;
+     color: red;
+ }
+
+ .imageDescription h2{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin: 10px 5px;
+ }
+
+
+ .price{
+     font-size: 28px;
+     font-weight: bold;
+     margin-left: 5px;
+ }
+ .fas{
+     cursor: pointer;
+ }
+
+ .checkOut a{
+     padding:10px;
+     margin-top: 30px;
+     text-decoration: none;
+     color: black;
+     background-color: rgb(247, 59, 59);
+ }
+
+ #button1{
+    background-color: rgba(133, 133, 150, 0.877); 
+    color:rgb(34, 33, 33);
+    border:none;
+    border-radius: 5px; 
+    padding:5px;
+    cursor: pointer;
+
+ }
+ .text-display > div{
+     display: inline-block;
+ }
+ 
+    
+
+@media screen and (max-width: 600px){
+   .main{
+       display: block;
+   } 
+   .left{
+       text-align: center;
+   }
+
+   .right-right{
+       text-align: center;
+   }
+   .right h1{
+       text-align: center;
+   }
+   .color{
+       text-align: center;
+   }
+   .square{
+       text-align: center;
+   }
+   .icons{
+       text-align: center;
+   }
+    
+   .added{
+       text-align: center;
+   }
+
+   .cart-cart{
+       display:block;
+   }
+
+   .cart-page{
+       text-align: center;
+   }
+
+   .cart-item{
+       text-align: center;
+      
+   }
+   .cart-right{
+       margin-left: 20%;
+       text-align: center;
+   }
+}

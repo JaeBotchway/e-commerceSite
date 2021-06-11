@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="cart" style="font-size: 1.5em">
+            🛒 (<span id="cart-count">0</span>)
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="cart-cart">
+        <div class="left">
+            <div class="cart-page">
+                <h1 class="cart-left">
+                    <span class="cart-left-left">Cart </span>
+                    <span class="color4" id="pickerCart" style="background-color: black">0</span>
+                </h1>
+            </div>
+
+            <div class="cart-item">
+                <table class="cart-item1" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity </th>
+                            <th> Unit Price</th>
+                            <th>Total Price</th>
+                            <th>Memory Size</th>
+                            <th>Delete<i class="fas fa-trash" id="trash" onclick="deleteAll()"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="item">
+                                <img src="" alt="" id="imageSmall">
+                            </td>
+                            
+                            <td>
+                                <input type="number" id="updatedQuantity" min="1" max="20.0" step="1.0">
+                                <button id="button1" onclick="quantityUpdate()">Update</button>
+                            </td>
+
+                            <td id="unitPrice">699</td>
+                            <td id="totalPrice">10</td>
+                            <td id="memorySize"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <div class="cart-item2"><a href="index.html">Back to products</a></div>
+        </div>
+
+        <div class="cart-right">
+            <div class="head">
+                <h3>Order Summary</h3>
+                <span>
+                    <span id="qtyOrderSummary">0</span>
+                    items total
+                </span>
+            </div>
+
+
+            <div class="flex">
+                <div class="d-flex">
+                    <span>Subtotal</span>
+                    <span class="spacer">
+                        <span>$</span>
+                        <span id="d-subTotal">0</span>
+                    </span>
+                </div>
+
+                <div class="d-flex">
+                    <span>Sales Tax</span>
+                    <span class="spacer">
+                        <span>$</span>
+                        <span>0.0</span>
+                    </span>
+                </div>
+
+                <div class="d-flex">
+                    <span>Discount</span>
+                    <span class="spacer">
+                        <span>$</span>
+                        <span id="d-Discount">0.0</span>
+                    </span>
+                </div>
+
+                <div class="d-flex">
+                    <span>Total</span>
+                    <span class="spacer">
+                        <h3 class="s-flex">
+                            <span>$</span>
+                            <span id="d-Total">0</span>
+                        </h3>
+                    </span>
+                </div>
+
+                <p class="primary-text"> Apply promo code</p>
+
+                <div class="btn-text">
+                    <input type="text" class="input-text" id="coupon" maxlength="5" placeholder="Enter promo code">
+                    <buttom class="btn" onclick="applyDiscount()">Apply</buttom>
+                </div>
+
+                <div class="btn-set">
+                    <button class="btn" onclick="checkOut()">Checkout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/123c704c20.js" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

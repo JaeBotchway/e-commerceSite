@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Product Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="frame">
+        <div class="cart" style="font-size: 1.5em">
+            🛒 (<span id="cart-count">0</span>)
+        </div>
+    </div>
+    <hr>
+
+    <div class="main">
+        <div class="left">
+            <img class="img-slide" id="imgField" src="images/images2.jpg">
+          
+            
+
+        </div>
+
+        <div class="right">
+            <div class="right-right">
+                <h2>Iphone 12 and Iphone 12 mini</h2>
+                <h3>Blast past fast.</h3>
+                <p>Product description</p>
+                <h5> 5G speed. A14 Bionic, the fastest chip in a smartphone.</h5>
+                <h5> An edge-to-edge OLED display. Ceramic Shield with four times better drop performance.<br>
+                    And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</h5>
+                <h1>$699</h1>
+            </div>
+            <div class="color">
+
+                <span class="color1" id="pick" style="background-color: rgb(219,54,54)" onclick="colorRed()"></span>
+                <span class="color1" id="pick" style="background-color: rgb(245,190,3)" onclick="colorYellow()"></span>
+                <span class="color1" id="pick" style="background-color: rgb(10,49,88)" onclick="colorBlue()"></span>
+                <span class="color1" id="pick" style="background-color: rgb(31,28,35)" onclick="colorBlack()"></span>
+                <p>Color: <span id="colorField"></span> </p>
+            </div>
+
+           
+            <form>
+                <p>Memory Size:</p>
+                <select id="sOptions">
+                    <option value="32GB" selected="selected">32</option>
+                    <option value="64GB">64</option>
+                </select>
+            </form>
+
+            <div class="icons">
+                <p>Quantity</p>
+                <span> <i class="fas fa-plus-circle" id="minus" onclick="Add()"></i> </span>
+                <input type="number" name="" id="numberField" min="1" max="20" value="1">
+                <span><i class="fas fa-minus-circle" id="plus" onclick="Subtract()"></i></span>
+            </div>
+
+            <div class="added">
+                <button class="add" onclick="addCart()">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="overlay">
+        <div class="sub-main">
+            <div class="text-main">Item added to cart</div>
+            <a class="btnClose" onclick="closeNav()">x</a>
+        </div>
+
+        <div class="index">
+            <div class="wrap item">
+                <div class="image"></div>
+            </div>
+
+            <div class="description">
+                <div class="imageDescription">
+                    <h2> Iphone 12 and Iphone 12 mini</h2>
+                </div>
+               <div height ="3px"> <img src = "" alt="iphone12" id ="imageSmall" width ="60px"> </div>
+                 
+                <div class="info">
+                    <p class="price">$699</p>
+                </div> 
+                <span>Memory Size:<span id="sizeSelected"></span></span>
+                <span>Quantity:<span id="qtySelected"></span></span>
+               
+            </div>
+        </div>
+
+
+
+        <div class="subTotal">
+            <span>Subtotal: $<span id="subTotal"></span></span>
+        </div>
+        <br>
+
+        <div class="checkOut"><a href="cart.html">Checkout</a></div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/a773208971.js" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>
