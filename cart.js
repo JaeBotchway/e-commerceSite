@@ -79,3 +79,9 @@ let applyDiscount = () => {
         console.log(document.getElementById('d-subTotal').innerHTML)
     }
 }
+
+let checkOut = () => {
+
+    alert("Thanks for the Purchase!");
+
+}
